@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/* src/components/Sidebar.css */
+.channel-item {
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 4px;
+  width: 95% !important;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.channel-item:hover {
+  background-color: #ffffff22;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* src/components/Sidebar.css */
+
+.custom-textfield .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.custom-textfield .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.custom-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.custom-textfield .MuiInputLabel-root {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-textfield .MuiInputBase-input {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.channel-dialog .MuiPaper-root {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 400px;
+  margin: 0% !important;
+}
+
+.custom-textfield {
+  margin: 0 !important;
+}
+.create-btn {
+  margin: 16px 0 0 0 !important; /* top right bottom left */
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #45a049;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin: 8px 0;
+  max-width: 70%;
+}
+
+.message.own {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.message.other {
+  margin-right: auto;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.text-content {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+  word-break: break-word;
+}
+
+.message.own .text-content {
+  background-color: #d1e7dd;
 }
